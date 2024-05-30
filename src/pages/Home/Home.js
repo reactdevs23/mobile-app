@@ -7,9 +7,11 @@ import Tabs from "../../components/common/Tabs/Tabs";
 import SelectBox from "../../components/common/SelectBox/SelectBox";
 import clsx from "clsx";
 import { Text, Button } from "../../components/common";
-import Navbar from "../../components/Navbar/Tabs";
 
 const Home = () => {
+  const navItems = ["Swap Crypto", "Airdrop", "Referral"];
+  const [selectedNavItem, setSelectedNavItem] = useState("Swap Crypto");
+
   const tabs = ["Swap", "Limit", "Send", "Buy"];
   const [selectedTab, setSelectedTab] = useState("Swap");
 
@@ -20,7 +22,11 @@ const Home = () => {
   return (
     <>
       <TopBar />
-      <Navbar />
+      <Tabs
+        tabs={navItems}
+        selectedTab={selectedNavItem}
+        setSelectedTab={setSelectedNavItem}
+      />{" "}
       <div className={classes.container}>
         {" "}
         <Tabs
