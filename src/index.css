@@ -7,15 +7,24 @@
   font-family: "Inter";
 }
 :root {
+  --Primary-Content: #fff;
   --Base-0: #fff;
   --Base-200: #dadadb;
-  --Base-400: #9d9d9f;
+  /*  */
+  --Base-300: #b6b9c9;
+  /*  */
+  --Base-400: #8e91a1;
   --Base-500: #78787c;
-  --Base-600: #5f5f63;
-  --Base-800: #222227;
-  --Base-900: #15151c;
-  --Base-950: #09090f;
-  --Primary-Default: #434aff;
+  /*  */
+  --Base-600: #484b5b;
+  /*  */
+  --Base-800: #202333;
+  /*  */
+  --Base-900: #181b2b;
+  /*  */
+  --Base-950: #141727;
+  /*  */
+  --Primary-Default: #2b63e1;
   --Yellow: #f7bd14;
   --Base-50: #f6f7f9;
 }
@@ -26,10 +35,13 @@ body {
 
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background: var(--bg);
+  background: var(--Base-900);
 }
 
-.mainPage {
+.mainWrapper {
+  max-width: 640px;
+  width: 90%;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 991px) {
 }
@@ -48,12 +60,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
 button,
 a {
   border: none;
   outline: none;
   cursor: pointer;
   transition: 0.3s;
+  background: transparent;
 }
 button:hover,
 a:hover {
@@ -94,4 +112,15 @@ a:hover {
   border-radius: 100vh;
   border: none;
   border-radius: 5px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

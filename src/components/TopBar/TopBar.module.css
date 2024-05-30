@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.walletImg {
+  max-width: 32px;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+.addressContainer {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px 6px 6px;
+
+  gap: 12px;
+  border-radius: 32px;
+  background: var(--Base-800);
+  margin-left: auto;
+}
+.addressImg {
+  max-width: 22px;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+.address {
+  opacity: 0.5;
+}
+.setting {
+  cursor: pointer;
+  opacity: 0.6;
+  font-size: 20px;
+  color: var(--Base-0);
+}

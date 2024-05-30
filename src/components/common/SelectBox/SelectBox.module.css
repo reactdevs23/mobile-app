@@ -1,0 +1,47 @@
+.wrapper {
+  border-radius: 16px;
+  background: var(--Base-800);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.arrow {
+  color: var(--Base-600);
+  font-size: 18px;
+}
+.selectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+.input {
+  width: 100%;
+  color: var(--Base-400);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  background: transparent;
+}
+.selectBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px 4px 12px;
+
+  border-radius: 32px;
+  background: rgba(43, 99, 225, 0.1);
+}
+.selectTokenText {
+  white-space: nowrap;
+}
+.balanceContainer {
+  margin-left: auto;
+}
+.balance {
+  color: var(--Base-0);
+}

@@ -1,0 +1,37 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.type2 {
+  border-radius: 44px;
+  background: var(--Base-950);
+  padding: 2px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.tab {
+  color: var(--Base-400);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  border-radius: 36px;
+  padding: 6px 16px;
+  padding-bottom: 8px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.activeTab {
+  background: var(--Primary-Default);
+  color: var(--Primary-Content);
+}
+.type2 .activeTab {
+  background: rgba(43, 99, 225, 0.1);
+  color: var(--Primary-Default);
+}
