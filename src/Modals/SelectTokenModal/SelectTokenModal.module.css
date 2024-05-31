@@ -1,0 +1,78 @@
+.inputAndToken {
+  padding: 0 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.allToken {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 0 4px;
+}
+.token {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px 6px 8px;
+
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--Base-800);
+  cursor: pointer;
+}
+.tokenLogo {
+  max-width: 22px;
+  width: 100%;
+}
+.items {
+  padding: 12px 0;
+  border-top: 1px solid var(--Base-700);
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+.active {
+  background: rgba(43, 99, 225, 0.1);
+}
+.logo {
+  max-width: 34px;
+  width: 100%;
+}
+.checkmark {
+  margin-left: auto;
+  font-size: 24px;
+  color: var(--Primary-Default);
+}
+.item:hover {
+  background: var(--Base-900);
+}
+.active:hover {
+  background: rgba(43, 99, 225, 0.1);
+}
+.customToken {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 0;
+  border-top: 1px solid var(--Base-700);
+  margin-top: auto;
+  justify-self: flex-end;
+}
+
+.customTextLabel {
+  cursor: pointer;
+}
+.plusIcon {
+  color: var(--Base-0);
+  opacity: 0.6;
+  font-size: 24px;
+  cursor: pointer;
+}

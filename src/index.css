@@ -9,14 +9,19 @@
 :root {
   --Primary-Content: #fff;
   --Base-0: #fff;
+
+  --Base-100: #dde0f0;
   --Base-200: #dadadb;
   /*  */
   --Base-300: #b6b9c9;
   /*  */
   --Base-400: #8e91a1;
-  --Base-500: #78787c;
+  /*  */
+  --Base-500: #707383;
   /*  */
   --Base-600: #484b5b;
+  /*  */
+  --Base-700: #282b3b;
   /*  */
   --Base-800: #202333;
   /*  */
@@ -25,7 +30,11 @@
   --Base-950: #141727;
   /*  */
   --Primary-Default: #2b63e1;
-  --Yellow: #f7bd14;
+  /* */
+  --Warning-Default: #ff9e2d;
+  /*  */
+  --Success-Default: #1fb778;
+
   --Base-50: #f6f7f9;
 }
 
@@ -38,13 +47,6 @@ body {
   background: var(--Base-900);
 }
 
-.mainWrapper {
-  max-width: 640px;
-  width: 90%;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 991px) {
-}
 h1,
 h2,
 h3,
@@ -78,11 +80,7 @@ a:hover {
   opacity: 0.8;
   transform: translateY(-3px);
 }
-.container {
-  max-width: 1199px;
-  margin: 0 auto;
-  width: 90%;
-}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -93,7 +91,7 @@ a:hover {
 }
 .overflow {
   scrollbar-width: thin;
-  scrollbar-color: var(--Primary) rgba(250, 250, 250, 0.2);
+  scrollbar-color: var(--Primary-Default) rgba(250, 250, 250, 0.2);
   border-radius: 5px;
 }
 
@@ -108,7 +106,7 @@ a:hover {
 }
 
 .overflow::-webkit-scrollbar-thumb {
-  background: var(--Primary);
+  background: var(--Primary-Default);
   border-radius: 100vh;
   border: none;
   border-radius: 5px;

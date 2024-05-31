@@ -1,0 +1,53 @@
+.warningWrappper,
+.warningContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.warningIcon {
+  font-size: 24px;
+  color: var(--Warning-Default);
+}
+.warningContainer {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 158, 45, 0.05);
+  background: rgba(255, 158, 45, 0.05);
+}
+.nameContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.fullName {
+  overflow: hidden;
+  color: var(--Base-500);
+  text-overflow: ellipsis;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+.addressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--Base-700);
+  padding-top: 5px;
+}
+.link {
+  color: var(--Primary-Default);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+.tokenWrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

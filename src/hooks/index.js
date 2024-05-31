@@ -22,3 +22,15 @@ const useOnClickOutside = (ref, handler) => {
 };
 
 export default useOnClickOutside;
+export const handleKeyDown = (event) => {
+  if (
+    !(
+      /[0-9]/.test(event.key) ||
+      event.key === "Backspace" ||
+      event.key === "ArrowUp" ||
+      event.key === "ArrowDown"
+    )
+  ) {
+    event.preventDefault();
+  }
+};

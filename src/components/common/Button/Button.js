@@ -12,7 +12,7 @@ const Button = ({
   transparentBase950,
   base0,
   noShadow,
-  primaryDefault,
+  base700,
   wFull,
   className,
   to,
@@ -28,7 +28,7 @@ const Button = ({
             transparentBase950 && classes.transparentBase950,
             base0 && classes.base0,
             noShadow && classes.noShadow,
-            primaryDefault && classes.primaryDefault,
+            base700 && classes.base700,
             wFull && classes.wFull
           )}
           onClick={onClick}
@@ -44,7 +44,7 @@ const Button = ({
             transparentBase950 && classes.transparentBase950,
             noShadow && classes.noShadow,
             base0 && classes.base0,
-            primaryDefault && classes.primaryDefault,
+            base700 && classes.base700,
             wFull && classes.wFull
           )}
           href={href}
@@ -62,7 +62,7 @@ const Button = ({
             transparentBase950 && classes.transparentBase950,
             noShadow && classes.noShadow,
             base0 && classes.base0,
-            primaryDefault && classes.primaryDefault,
+            base700 && classes.base700,
             wFull && classes.wFull
           )}
           to={to}
@@ -78,7 +78,7 @@ const Button = ({
             transparentBase950 && classes.transparentBase950,
             noShadow && classes.noShadow,
             base0 && classes.base0,
-            primaryDefault && classes.primaryDefault,
+            base700 && classes.base700,
             wFull && classes.wFull
           )}
         >

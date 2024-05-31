@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.step {
+  display: flex;
+  gap: 10px;
+}
+.checkmark {
+  color: var(--Primary-Default);
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.warningContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(43, 99, 225, 0.05);
+  background: rgba(43, 99, 225, 0.1);
+  padding: 16px;
+  width: 100%;
+}
+.warningIcon {
+  font-size: 24px;
+  color: var(--Primary-Default);
+}

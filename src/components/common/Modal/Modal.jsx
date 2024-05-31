@@ -1,14 +1,18 @@
 import classes from "./Modal.module.css";
 import { AiOutlineClose } from "react-icons/ai";
+import { IoArrowBack } from "react-icons/io5";
 
 import clsx from "clsx";
+import Text from "../Text/Text";
 
 const Modal = ({
-  noCross,
+  heading,
   isActive,
   onClose,
   className,
+  backButton,
   children,
+  onBack,
   ...rest
 }) => {
   return (
@@ -24,15 +28,24 @@ const Modal = ({
           className,
           isActive && classes.active,
 
-          classes.modal
+          classes.modal,
+          "overflow"
         )}
         {...rest}
       >
-        {!noCross && (
-          <div onClick={onClose} className={classes.close}>
-            <AiOutlineClose className={className.closeIcon} />
+        {heading && (
+          <div className={classes.header}>
+            {backButton && (
+              <IoArrowBack className={classes.backButton} onClick={onBack} />
+            )}
+            <Text lg base0 semiBold>
+              {heading}
+            </Text>
+
+            <AiOutlineClose className={classes.closeIcon} onClick={onClose} />
           </div>
         )}
+
         {children}
       </div>
     </>

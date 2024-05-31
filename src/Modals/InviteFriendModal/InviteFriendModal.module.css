@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.info {
+  max-width: 400px;
+}
+.input {
+  border-radius: 12px;
+}

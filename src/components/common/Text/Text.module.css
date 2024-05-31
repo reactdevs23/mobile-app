@@ -11,11 +11,29 @@
 .base {
   font-size: 16px;
 }
+.lg {
+  font-size: 18px;
+}
+.xl {
+  font-size: 20px;
+}
+.xl2 {
+  font-size: 24px;
+}
+.xl3 {
+  font-size: 30px;
+}
 .primaryDefault {
   color: var(--Primary-Default);
 }
+.warningDefault {
+  color: var(--Warning-Default);
+}
 .base0 {
   color: var(--Base-0);
+}
+.base100 {
+  color: var(--Base-100);
 }
 .base300 {
   color: var(--Base-300);
@@ -47,4 +65,7 @@
 }
 .semiBold {
   font-weight: 500;
+}
+.font600 {
+  font-weight: 600;
 }

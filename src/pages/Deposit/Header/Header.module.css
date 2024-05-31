@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  gap: 12px;
+}
+.heading {
+  flex: 1;
+  transform: translateX(-12px);
+}

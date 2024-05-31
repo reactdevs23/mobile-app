@@ -14,10 +14,13 @@
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  top: 50%;
+
   left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  transform: translateX(-50%);
   opacity: 0;
   pointer-events: none;
   transition: 0.4s ease;
@@ -26,28 +29,35 @@
 
   /* my */
   margin: 0 auto;
-  max-height: 680px;
-  overflow-y: auto;
-  /* max-height: calc(100vh - 80px);
-  overflow: auto; */
-}
+  max-width: 640px;
+  width: 100%;
 
-.close {
-  position: absolute;
-  top: 5px;
-  right: 10px;
+  overflow-y: auto;
+
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  border-radius: 24px 24px 0 0;
+  background: var(--Base-800);
+  box-shadow: 0px -40px 64px -16px rgba(0, 0, 0, 0.2);
+}
+.header {
+  display: flex;
+
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+.backButton {
+  color: var(--Base-500);
+  font-size: 24px;
   cursor: pointer;
 }
-
-.modal.styled {
-  padding: 20px;
-  background-color: var(--color-bg-dark-2);
-  border: 1px solid var(--color-border-dark);
-  box-shadow: 0px 40px 64px -16px var(--shadowColor);
-  border-radius: 20px;
-}
 .closeIcon {
-  font-size: 20px;
+  font-size: 22px;
+  color: var(--Base-600);
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .modalOverlay.active {

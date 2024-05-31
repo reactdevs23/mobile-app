@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.infoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 16px;
+  background: var(--Base-800, #202333);
+  padding: 16px;
+}
+.totalEarning {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-top: 1px solid var(--Base-700);
+  border-radius: 16px;
+  background: var(--Base-800, #202333);
+}
+.earnings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.button {
+  margin-left: auto;
+}
+.userInfo {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px 0;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+.statusHeading {
+  text-align: right;
+}
+.statusContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+.status {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.pending {
+  background: rgba(255, 158, 45, 0.1);
+  color: var(--Warning-Default);
+}
+.joined {
+  background: rgba(43, 99, 225, 0.1);
+  color: var(--Primary-Default);
+}
+.swapped {
+  background: rgba(17, 208, 128, 0.1);
+  color: var(--Success-Default);
+}
+.heading,
+.name,
+.statusContainer,
+.earning {
+  padding: 0 20px;
+  white-space: nowrap;
+}
+.heading {
+  border-bottom: 1px solid var(--Base-700);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.userNameHeading,
+.name {
+  padding-left: 0;
+}
+.statusContainer,
+.statusHeading {
+  padding-right: 0;
+}

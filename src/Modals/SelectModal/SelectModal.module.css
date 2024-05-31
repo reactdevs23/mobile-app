@@ -1,0 +1,32 @@
+.inputWrapper {
+  padding: 0 20px;
+}
+.items {
+  padding: 20px 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+.active {
+  background: rgba(43, 99, 225, 0.1);
+}
+.logo {
+  max-width: 20px;
+  width: 100%;
+}
+.checkmark {
+  margin-left: auto;
+  font-size: 24px;
+  color: var(--Primary-Default);
+}
+.item:hover {
+  background: var(--Base-900);
+}
+.active:hover {
+  background: rgba(43, 99, 225, 0.1);
+}
