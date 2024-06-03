@@ -1,8 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import TopBar from "../components/TopBar/TopBar";
-import Navbar from "../components/Navbar/Navbar";
+
 import classes from "./MainLayout.module.css";
+import Navbar from "../components/Navbar/Navbar";
 
 const Layout = () => {
   return (

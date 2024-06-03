@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./WithdrawForm.module.css";
-import Header from "../../Deposit/Header/Header";
-import { Button, Text } from "../../../components/common";
+
+import { Button, Text, Header } from "../../../components/common";
 import { scan } from "../../../images";
 import Input from "../../../components/common/Input/Input";
 import { FaAngleDown } from "react-icons/fa";

@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./DepositAddress.module.css";
 
-import { Button, Text } from "../../../components/common";
-import Header from "../Header/Header";
+import { Button, Header, Text } from "../../../components/common";
+
 import { copyIcon, qrCode } from "../../../images";
 
 const DepositAddress = () => {

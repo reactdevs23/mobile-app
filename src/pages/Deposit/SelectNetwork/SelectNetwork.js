@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import classes from "./SelectNetwork.module.css";
 
-import { Text } from "../../../components/common";
+import { Text, Header } from "../../../components/common";
 
 import { FaAngleRight } from "react-icons/fa6";
 
 import clsx from "clsx";
 
 import Input from "../../../components/common/Input/Input";
-import Header from "../Header/Header";
 
 const SelectNetwork = () => {
   const [searchValue, setSearchValue] = useState("");

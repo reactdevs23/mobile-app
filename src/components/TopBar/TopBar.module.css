@@ -5,7 +5,11 @@
   gap: 12px;
   padding: 20px 0;
 }
-
+.wallet {
+  max-width: 36px;
+  width: 100%;
+  border-radius: 50%;
+}
 .walletImg {
   max-width: 32px;
   aspect-ratio: 1/1;

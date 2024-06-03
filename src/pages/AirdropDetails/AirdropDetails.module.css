@@ -9,18 +9,24 @@
 .header {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 20px;
+  gap: 16px;
 }
 .backArrow {
   cursor: pointer;
+  max-width: 24px;
+  width: 100%;
 }
 .logo {
-  max-width: 42px;
+  max-width: 48px;
   width: 100%;
 }
 .participants {
   display: flex;
   align-items: center;
+}
+.participant {
+  max-width: 28px;
+  width: 100%;
 }
 .infoContainer {
   display: flex;
@@ -81,7 +87,11 @@
   padding-bottom: 24px;
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
 }
 .rewardImg {
   max-width: 24px;

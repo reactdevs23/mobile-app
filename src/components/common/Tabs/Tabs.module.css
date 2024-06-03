@@ -39,6 +39,7 @@
   color: var(--Primary-Content);
   transform: translateY(0);
 }
+
 .type2 .activeTab {
   background: rgba(43, 99, 225, 0.1);
   color: var(--Primary-Default);
@@ -47,6 +48,7 @@
   color: var(--Primary-Content);
   background: transparent;
   position: relative;
+  border-radius: 3px 3px 0px 0px;
 }
 
 .type3 .activeTab::before {
@@ -54,7 +56,7 @@
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
-  border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0 0;
   height: 3px;
   width: 100%;
   background: var(--Primary-Default);

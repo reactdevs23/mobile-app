@@ -1,0 +1,74 @@
+.wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.img {
+  display: block;
+  max-width: 112px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profitAndEarned {
+  display: flex;
+  flex-direction: column;
+  background: var(--Base-900);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.profit {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.profitWrapper {
+  border-bottom: 1px solid var(--Base-700);
+}
+.totalEarned,
+.profitWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 20px 16px;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+}
+.profitContainer,
+.earnedContainer {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.coin {
+  max-width: 22px;
+  width: 100%;
+}
+.costValue .coin {
+  max-width: 24px;
+}
+.buttonContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+}
+.unsubscribe {
+  background: rgba(43, 99, 225, 0.1);
+  color: var(--Primary-Default);
+}

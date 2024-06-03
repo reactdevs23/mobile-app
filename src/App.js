@@ -17,10 +17,13 @@ import WithdrawSuccess from "./pages/WithdrawSuccess/WithdrawSuccess";
 import Referral from "./pages/Referral/Referral";
 import MainLayout from "./Layout/MainLayout";
 import classes from "./App.module.css";
+import TapBotAndMarkets from "./pages/TapBotAndMarketsSubscription/TapBotAndMarketsSubscription";
+
 const App = () => {
   return (
     <>
-      <h1 className={classes.heading}>Please open in mobile</h1>
+      {/* <h1 className={classes.heading}>Please open in mobile</h1> */}
+
       <div className={classes.mainWrapper}>
         <Routes>
           <Route path="/" element={<MainLayout />}>
@@ -29,26 +32,22 @@ const App = () => {
             <Route path="/referral" element={<Referral />}></Route>
           </Route>
           <Route path="/swap-successfull" element={<SwapSuccesfull />} />
-
           <Route path="/airdrop-details" element={<AirdropDetails />} />
           <Route path="/airdrop-success" element={<AirdropSuccess />} />
           <Route path="/wallet" element={<Wallet />} />
-
           <Route path="/deposit/select-coin" element={<SelectCoin />} />
           <Route path="/deposit/select-network" element={<SelectNetwork />} />
           <Route path="/deposit/deposit-address" element={<DepositAddress />} />
-
           <Route
             path="/withdraw/select-coin"
             element={<WithdrawSelectCoin />}
           />
-
-          <Route path="withdraw/withdraw-from" element={<WithdrawForm />} />
-
+          <Route path="/withdraw/withdraw-from" element={<WithdrawForm />} />
           <Route
-            path="withdraw/withdraw-success"
+            path="/withdraw/withdraw-success"
             element={<WithdrawSuccess />}
-          />
+          />{" "}
+          <Route path="/tap" element={<TapBotAndMarkets />} />
         </Routes>
       </div>
     </>

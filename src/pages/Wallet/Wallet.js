@@ -1,13 +1,10 @@
 import React from "react";
 import classes from "./Wallet.module.css";
-import { backArrow } from "../../images";
-import { useNavigate } from "react-router-dom";
-import { Button, Text } from "../../components/common";
+
+import { Button, Header, Text } from "../../components/common";
 import { aave, aura, badger, bnb, eth, oneInch } from "../../images";
 import clsx from "clsx";
 const Wallet = () => {
-  const navigate = useNavigate();
-
   const myAssets = [
     {
       logo: eth,
@@ -54,17 +51,7 @@ const Wallet = () => {
   ];
   return (
     <div className={classes.wrapper}>
-      <div className={classes.header}>
-        <img
-          src={backArrow}
-          alt="#"
-          className={classes.backArrow}
-          onClick={() => navigate(-1)}
-        />
-        <Text base base0 textCenter className={classes.heading}>
-          Wallet
-        </Text>{" "}
-      </div>
+      <Header heading="Wallet" />
       <Text textCenter base500 sm>
         Total Balance (BTC)
       </Text>

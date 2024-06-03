@@ -55,12 +55,9 @@ const AirdropDetails = ({ status = "Ongoing" }) => {
 
   return (
     <section className={classes.wrapper}>
-      <img
-        src={backArrow}
-        alt="#"
-        className={classes.backArrow}
-        onClick={() => navigate(-1)}
-      />
+      <button onClick={() => navigate(-1)}>
+        <img src={backArrow} alt="#" className={classes.backArrow} />
+      </button>
       <div className={classes.header}>
         <img src={ethw} alt="#" className={classes.logo} />
         <div className={classes.infoContainer}>

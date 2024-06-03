@@ -9,3 +9,8 @@
   flex: 1;
   transform: translateX(-12px);
 }
+.backArrow {
+  cursor: pointer;
+  max-width: 24px;
+  width: 100%;
+}

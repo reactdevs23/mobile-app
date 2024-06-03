@@ -51,6 +51,15 @@ import sendReffer from "./refer/sendReffer.png";
 import peopleJoin from "./refer/peopleJoin.png";
 import receivePoint from "./refer/receivePoint.png";
 import claimCryto from "./refer/claimCrypto.png";
+
+//tapbot
+
+import coin from "./tapbot/coin.png";
+import rocket from "./tapbot/rocket.png";
+import placholer from "./tapbot/placeholeder.png";
+import balanceIcon from "./tapbot/balanceIcon.png";
+import coinLogo from "./tapbot/coinLogo.png";
+import token from "./tapbot/token.png";
 export {
   walletImg,
   addressImg,
@@ -107,4 +116,12 @@ export {
   peopleJoin,
   receivePoint,
   claimCryto,
+
+  //tapbot
+  coin,
+  rocket,
+  placholer,
+  balanceIcon,
+  coinLogo,
+  token,
 };

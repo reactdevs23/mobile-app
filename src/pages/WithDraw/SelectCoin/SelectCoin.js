@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./SelectCoin.module.css";
 
-import { Text } from "../../../components/common";
+import { Text, Header } from "../../../components/common";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 import clsx from "clsx";
@@ -18,7 +18,6 @@ import {
 } from "../../../images";
 import Input from "../../../components/common/Input/Input";
 import Marquee from "react-fast-marquee";
-import Header from "../../Deposit/Header/Header";
 
 const SelectCoin = () => {
   const [searchValue, setSearchValue] = useState("");

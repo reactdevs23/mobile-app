@@ -17,8 +17,20 @@
   grid-template-columns: repeat(4, 1fr);
   align-items: flex-start;
   gap: 6px;
+  position: relative;
+  z-index: 1;
 }
-
+.steps::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 110px);
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  background: var(--Base-800, #202333);
+  z-index: -1;
+}
 .step {
   display: flex;
   flex-direction: column;
