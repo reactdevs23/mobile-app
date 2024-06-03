@@ -39,3 +39,6 @@
   background: var(--Primary-Default);
   color: var(--Primary-Content);
 }
+.navItem:hover {
+  transform: translateY(0);
+}
