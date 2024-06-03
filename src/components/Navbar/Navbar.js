@@ -9,7 +9,15 @@ const Navbar = () => {
   const navItems = [
     { navItem: "Swap Crypto", to: "/" },
     { navItem: "Airdrop", to: "/airdrop" },
-    { navItem: "Referral", to: "/referral" },
+    {
+      navItem: "Referral",
+      to: "/referral",
+    },
+    { navItem: "Tap to Earn", to: "/earn" },
+    {
+      navItem: "Wallet",
+      to: "/wallet",
+    },
   ];
 
   useEffect(() => {

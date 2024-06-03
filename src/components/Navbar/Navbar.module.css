@@ -1,6 +1,6 @@
 .navbarContainer {
   display: flex;
-  justify-content: center;
+
   width: 100%;
   overflow: hidden;
   -ms-overflow-style: none; /* Internet Explorer 10+ */

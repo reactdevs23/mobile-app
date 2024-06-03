@@ -18,12 +18,13 @@ import Referral from "./pages/Referral/Referral";
 import MainLayout from "./Layout/MainLayout";
 import classes from "./App.module.css";
 import TapBotAndMarkets from "./pages/TapBotAndMarketsSubscription/TapBotAndMarketsSubscription";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <>
       {/* <h1 className={classes.heading}>Please open in mobile</h1> */}
-
+      <Navbar />
       <div className={classes.mainWrapper}>
         <Routes>
           <Route path="/" element={<MainLayout />}>
